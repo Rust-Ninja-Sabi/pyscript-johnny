@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Recommended meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- PyScript CSS -->
+        
+        <!-- This script tag bootstraps PyScript -->
+        <script type="module" src="https://pyscript.net/snapshots/2023.11.1.RC3/core.js"></script>
+    
+        <style>
+            body {
+                font-family: monospace;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+            }
+
+            canvas {
+                border: 1px solid black;
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>where is my 🍏</h1>
+        <h2 id="score_time"><h2>
+        <div>
+            <canvas id="Canvas"></canvas>
+        </div>
+        <p>Help Jonny find as many apples as possible within a minute. Control is via the arrow keys or touch.</p>
+        
+        <py-script src="game.py" config="game.toml">
+        </py-script>
+    </body>
+</html>
